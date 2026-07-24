@@ -6,7 +6,7 @@
   <meta name="description" content="Zogg's Sound Audit — a native macOS sound archive, waveform browser and tonal evidence system." />
   <meta property="og:title" content="Zogg's Sound Audit — Earth made the noise." />
   <meta property="og:description" content="Search, audition, inspect and drag your local sound archive directly into creative software." />
-  <meta property="og:image" content="https://tomislavrupic.github.io/zoggs-sound-audit-mac/assets/zoggs-sound-audit-real-app.png" />
+  <meta property="og:image" content="https://tomislavrupic.github.io/zoggs-sound-audit-mac/assets/zoggs-sound-audit-atlas.png" />
   <title>Zogg's Sound Audit — Earth Made the Noise</title>
   <link rel="icon" href="assets/zogg-icon.png" />
   <link rel="stylesheet" href="styles.css" />
@@ -17,17 +17,17 @@
   <header>
     <a class="brand" href="#top"><img src="assets/zogg-icon.png" alt="" /><span><b>ZOGG'S</b><small>SOUND AUDIT / PIX-7</small></span></a>
     <nav><a href="#zogg">ZOGG</a><a href="#archive">ARCHIVE</a><a href="#signal">SIGNAL</a><a href="#app-view">APP</a></nav>
-    <a class="header-download" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.1.0/Zoggs-Sound-Audit-0.1.0.dmg">DOWNLOAD ↓</a>
+    <a class="header-download" href="https://github.com/tomislavrupic/ZOGG-S-SOUND-AUDIT/releases/download/v0.2.0/Zoggs-Sound-Audit-0.2.0.dmg">DOWNLOAD ↓</a>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow"><i></i> NATIVE MACOS SOUND ARCHIVE / V0.1.0</p>
+        <p class="eyebrow"><i></i> NATIVE MACOS SOUND ARCHIVE / V0.2.0</p>
         <h1>EARTH MADE<br />THE <span>NOISE.</span></h1>
         <p class="lede">Bring your own sound library. Zogg indexes and analyses it locally, then lets you search, inspect, audition and drag the original files straight into Ableton, Resolve or your software of choice.</p>
         <div class="actions">
-          <a class="button primary" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.1.0/Zoggs-Sound-Audit-0.1.0.dmg"><span>DOWNLOAD FOR MAC</span><b>V0.1.0</b></a>
+          <a class="button primary" href="https://github.com/tomislavrupic/ZOGG-S-SOUND-AUDIT/releases/download/v0.2.0/Zoggs-Sound-Audit-0.2.0.dmg"><span>DOWNLOAD FOR MAC</span><b>V0.2.0</b></a>
           <a class="button ghost" href="#archive">INSPECT THE ARCHIVE</a>
         </div>
         <div class="compat"><span>APPLE SILICON</span><span>LOCAL ONLY</span><span>NO CLOUD</span><span>ORIGINALS UNTOUCHED</span></div>
@@ -35,14 +35,20 @@
       <div class="instrument">
         <div class="instrument-head"><span>EARTH SECTOR / LIVE</span><b><i></i> ARCHIVE READY</b></div>
         <div class="icon-stage">
-          <div class="orbit one"></div><div class="orbit two"></div>
+          <div class="signal-sweep" aria-hidden="true"></div>
+          <div class="orbit one"><i></i></div><div class="orbit two"><i></i></div>
+          <div class="orbit three"><i></i></div>
+          <div class="crosshair" aria-hidden="true"><i></i><b></b></div>
           <img src="assets/zogg-icon.png" alt="Zogg's Sound Audit app icon" />
-          <span class="tag top">YOUR RECORDS</span><span class="tag bottom">LOCAL EVIDENCE</span>
+          <span class="tag top">YOUR RECORDS <i>42,465</i></span>
+          <span class="tag right">AUDIT / ACTIVE</span>
+          <span class="tag bottom">LOCAL EVIDENCE <i>READ ONLY</i></span>
+          <div class="signal-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
         </div>
         <div class="readout">
-          <div><span>SOURCE</span><b>YOUR FOLDERS</b></div>
-          <div><span>PLAYBACK</span><b>NATIVE</b></div>
-          <div><span>STATUS</span><b>CONNECTED</b></div>
+          <div><span>SOURCE</span><b>YOUR FOLDERS</b><i style="--level:82%"></i></div>
+          <div><span>PLAYBACK</span><b>NATIVE</b><i style="--level:64%"></i></div>
+          <div><span>STATUS</span><b>CONNECTED</b><i style="--level:96%"></i></div>
         </div>
       </div>
     </section>
@@ -89,19 +95,30 @@
       </div>
     </section>
 
-    <section class="section atlas" id="app-view">
-      <div class="section-title compact"><span>03</span><div><p>WORKING APPLICATION</p><h2>THE ARCHIVE<br />IS ALREADY REAL.</h2></div><p>This is the current native macOS application running against a real 42,465-file production library. Public installations begin empty and become the user's own searchable, analysable sound explorer.</p></div>
-      <div class="atlas-frame"><img src="assets/zoggs-sound-audit-real-app.png" alt="The real Zogg's Sound Audit macOS application browsing a local sound library" /><span>REAL APPLICATION / PRIVATE TEST ARCHIVE</span></div>
+    <section class="section app-showcase" id="app-view">
+      <div class="section-title compact"><span>03</span><div><p>WORKING APPLICATION</p><h2>ONE ARCHIVE.<br />TWO PERSPECTIVES.</h2></div><p>The current native macOS app running against a real 42,465-file production library. Public installations begin empty, then become the user's own searchable and explorable sound universe.</p></div>
+      <div class="app-views">
+        <figure class="app-frame ledger-view">
+          <div class="frame-head"><span>01 / AUDIT LEDGER</span><b>SEARCH · PREVIEW · DRAG</b></div>
+          <img src="assets/zoggs-sound-audit-ledger.png" alt="Zogg's Sound Audit Ledger displaying a real local library with waveform previews and evidence details" loading="lazy" />
+          <figcaption><strong>THE LEDGER</strong><span>Find the exact sound, audition it, inspect its evidence, then drag the untouched original into your project.</span></figcaption>
+        </figure>
+        <figure class="app-frame atlas-view">
+          <div class="frame-head"><span>02 / SONIC ATLAS</span><b>ORBIT · SELECT · AUDITION</b></div>
+          <img src="assets/zoggs-sound-audit-atlas.png" alt="Zogg's Sound Audit three-dimensional Sonic Atlas showing a real 42,465-file sound library as a galaxy" loading="lazy" />
+          <figcaption><strong>THE SONIC ATLAS</strong><span>Leave the list behind and explore the complete archive as an orbitable three-dimensional sound galaxy.</span></figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="download">
       <div class="download-glow"></div>
       <img src="assets/zogg-icon.png" alt="" />
-      <span>ZOGG'S SOUND AUDIT / V0.1.0</span>
+      <span>ZOGG'S SOUND AUDIT / V0.2.0</span>
       <h2>KEEP THE<br />EVIDENCE.</h2>
       <p>Native. Local. Fast. Slightly suspicious of folders.</p>
-      <a class="button primary large" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.1.0/Zoggs-Sound-Audit-0.1.0.dmg"><span>DOWNLOAD FOR MAC</span><b>↓</b></a>
-      <a class="checksum" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.1.0/Zoggs-Sound-Audit-0.1.0.dmg.sha256">SHA-256 CHECKSUM</a>
+      <a class="button primary large" href="https://github.com/tomislavrupic/ZOGG-S-SOUND-AUDIT/releases/download/v0.2.0/Zoggs-Sound-Audit-0.2.0.dmg"><span>DOWNLOAD FOR MAC</span><b>↓</b></a>
+      <a class="checksum" href="https://github.com/tomislavrupic/ZOGG-S-SOUND-AUDIT/releases/download/v0.2.0/Zoggs-Sound-Audit-0.2.0.dmg.sha256">SHA-256 CHECKSUM</a>
       <small>MACOS 15+ / APPLE SILICON</small>
     </section>
   </main>
