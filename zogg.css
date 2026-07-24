@@ -1,0 +1,130 @@
+.zogg-presence {
+  display: grid;
+  grid-template-columns: minmax(360px, .82fr) 1.18fr;
+  gap: 7vw;
+  align-items: center;
+  padding: 110px 7vw;
+  border-bottom: 1px solid var(--line);
+  background: radial-gradient(circle at 18% 50%, rgba(178, 74, 209, .12), transparent 40%);
+}
+
+.zogg-portrait {
+  position: relative;
+  max-width: 620px;
+  padding: 8px;
+  border: 1px solid #334044;
+  background: #030506;
+  box-shadow: 0 40px 90px #000;
+}
+
+.zogg-portrait::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border: 1px solid rgba(157, 189, 48, .2);
+  pointer-events: none;
+}
+
+.zogg-portrait img {
+  display: block;
+  width: 100%;
+  filter: saturate(.86) contrast(1.06);
+}
+
+.zogg-portrait > span {
+  position: absolute;
+  left: 22px;
+  bottom: 22px;
+  padding: 7px 10px;
+  border: 1px solid var(--green);
+  background: rgba(5, 8, 9, .9);
+  color: var(--green);
+  font-size: 8px;
+  letter-spacing: .08em;
+}
+
+.zogg-copy {
+  max-width: 680px;
+}
+
+.zogg-copy h2 {
+  margin: 28px 0;
+  color: #e6e2e8;
+  font: 800 clamp(58px, 6.4vw, 104px)/.84 system-ui, sans-serif;
+  letter-spacing: -.07em;
+}
+
+.zogg-copy h2 span {
+  color: var(--green);
+}
+
+.zogg-copy > p:not(.eyebrow) {
+  max-width: 620px;
+  color: #9ba4a8;
+  font: 17px/1.7 system-ui, sans-serif;
+}
+
+.zogg-copy blockquote {
+  margin: 34px 0;
+  padding: 18px 22px;
+  border-left: 2px solid var(--purple);
+  background: rgba(178, 74, 209, .06);
+  color: var(--purple);
+  font-size: 15px;
+  letter-spacing: .04em;
+}
+
+.zogg-copy dl {
+  margin: 35px 0 0;
+  border: 1px solid var(--line);
+}
+
+.zogg-copy dl div {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.zogg-copy dl div:last-child {
+  border: 0;
+}
+
+.zogg-copy dt {
+  color: var(--muted);
+}
+
+.zogg-copy dd {
+  margin: 0;
+  color: var(--green);
+}
+
+@media (max-width: 900px) {
+  .zogg-presence {
+    grid-template-columns: 1fr;
+  }
+
+  .zogg-portrait {
+    width: min(620px, 100%);
+    margin: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .zogg-presence {
+    padding: 80px 22px;
+  }
+
+  .zogg-copy h2 {
+    font-size: 58px;
+  }
+
+  .zogg-copy > p:not(.eyebrow) {
+    font-size: 15px;
+  }
+
+  .zogg-copy dl div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
