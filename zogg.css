@@ -128,3 +128,222 @@
     gap: 4px;
   }
 }
+
+/* Musical Audit v0.5.1 */
+.musical-audit {
+  background:
+    radial-gradient(circle at 82% 8%, rgba(157, 189, 48, .1), transparent 34%),
+    radial-gradient(circle at 12% 88%, rgba(178, 74, 209, .1), transparent 38%);
+}
+
+.audit-console {
+  margin-top: 62px;
+  border: 1px solid #334044;
+  padding: 18px;
+  background: linear-gradient(145deg, rgba(10, 15, 17, .96), rgba(5, 8, 9, .96));
+  box-shadow: 0 30px 90px rgba(0, 0, 0, .35);
+}
+
+.audit-console-head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+  color: #788287;
+  font-size: 9px;
+  letter-spacing: .1em;
+}
+
+.audit-console-head b {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.audit-console-head i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 12px var(--green);
+}
+
+.audit-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.audit-metrics div {
+  min-height: 126px;
+  padding: 24px 20px;
+  border-right: 1px solid var(--line);
+}
+
+.audit-metrics div:last-child {
+  border-right: 0;
+}
+
+.audit-metrics span,
+.audit-metrics b,
+.audit-metrics small {
+  display: block;
+}
+
+.audit-metrics span {
+  color: var(--muted);
+  font-size: 8px;
+  letter-spacing: .12em;
+}
+
+.audit-metrics b {
+  margin: 10px 0 7px;
+  color: #e6e2e8;
+  font-size: 15px;
+}
+
+.audit-metrics small {
+  color: var(--purple);
+  font-size: 8px;
+}
+
+.audit-flow {
+  display: flex;
+  align-items: center;
+  padding: 14px 4px 0;
+  border-top: 1px solid var(--line);
+  color: var(--green);
+  font-size: 8px;
+  letter-spacing: .12em;
+}
+
+.audit-flow i {
+  flex: 1;
+  height: 1px;
+  margin: 0 18px;
+  background: linear-gradient(90deg, var(--purple), var(--green));
+}
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.capability-grid article {
+  min-height: 245px;
+  padding: 28px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(9, 13, 15, .74);
+}
+
+.capability-grid em {
+  color: var(--purple);
+  font-style: normal;
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+
+.capability-grid h3 {
+  margin: 22px 0 13px;
+  color: var(--green);
+  font-size: 14px;
+  letter-spacing: .1em;
+}
+
+.capability-grid p {
+  color: #879095;
+  font: 14px/1.7 system-ui, sans-serif;
+}
+
+.crew-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 22px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.crew-grid span {
+  padding: 16px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: #7f898d;
+  font-size: 9px;
+  letter-spacing: .08em;
+}
+
+.crew-grid b {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.release-note {
+  position: relative;
+  margin: 16px auto 0 !important;
+  color: #6f787c !important;
+  font-size: 11px !important;
+}
+
+@media (max-width: 900px) {
+  .audit-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .audit-metrics div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .audit-metrics div:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .capability-grid,
+  .crew-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .audit-console {
+    margin-top: 40px;
+    padding: 12px;
+  }
+
+  .audit-console-head,
+  .audit-flow {
+    align-items: flex-start;
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  .audit-flow i {
+    width: 1px;
+    height: 16px;
+    flex: none;
+    margin: 0 0 0 8px;
+  }
+
+  .audit-metrics,
+  .capability-grid,
+  .crew-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-metrics div,
+  .audit-metrics div:nth-child(2) {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .audit-metrics div:last-child {
+    border-bottom: 0;
+  }
+
+  .capability-grid article {
+    min-height: auto;
+  }
+}

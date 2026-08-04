@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Zogg's Sound Audit — a native macOS sound archive, waveform browser and tonal evidence system." />
+  <meta name="description" content="Zogg's Sound Audit — a local-first native macOS sound archive with musical analysis, editable MIDI and groove extraction." />
   <meta property="og:title" content="Zogg's Sound Audit — Earth made the noise." />
-  <meta property="og:description" content="Search, audition, inspect and drag your local sound archive directly into creative software." />
+  <meta property="og:description" content="Search, audition, analyze and turn local sound libraries into editable MIDI and reusable grooves." />
   <meta property="og:image" content="https://tomislavrupic.github.io/zoggs-sound-audit-mac/assets/zoggs-sound-audit-atlas.png" />
   <title>Zogg's Sound Audit — Earth Made the Noise</title>
   <link rel="icon" href="assets/zogg-icon.png" />
@@ -16,18 +16,18 @@
   <div class="grid" aria-hidden="true"></div>
   <header>
     <a class="brand" href="#top"><img src="assets/zogg-icon.png" alt="" /><span><b>ZOGG'S</b><small>SOUND AUDIT / PIX-7</small></span></a>
-    <nav><a href="#zogg">ZOGG</a><a href="#archive">ARCHIVE</a><a href="#signal">SIGNAL</a><a href="#app-view">APP</a></nav>
-    <a class="header-download" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.4.4/Zoggs-Sound-Audit_0.4.4_aarch64.dmg">DOWNLOAD ↓</a>
+    <nav><a href="#zogg">ZOGG</a><a href="#archive">ARCHIVE</a><a href="#musical">MUSICAL</a><a href="#signal">SIGNAL</a><a href="#app-view">APP</a></nav>
+    <a class="header-download" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.5.1/Zoggs-Sound-Audit_0.5.1_native_arm64.dmg">DOWNLOAD ↓</a>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow"><i></i> NATIVE MACOS SOUND ARCHIVE / V0.4.4</p>
+        <p class="eyebrow"><i></i> NATIVE MACOS SOUND ARCHIVE / V0.5.1</p>
         <h1>EARTH MADE<br />THE <span>NOISE.</span></h1>
-        <p class="lede">Bring your own sound library. Zogg indexes and analyses it locally, then lets you search, inspect, audition and drag the original files straight into Ableton, Resolve or your software of choice.</p>
+        <p class="lede">Bring your own sound library. Zogg indexes and analyzes it locally, hears pitch and rhythm, extracts editable MIDI and reusable grooves, then lets you drag the untouched originals or derived control data straight into your creative tools.</p>
         <div class="actions">
-          <a class="button primary" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.4.4/Zoggs-Sound-Audit_0.4.4_aarch64.dmg"><span>DOWNLOAD FOR MAC</span><b>V0.4.4</b></a>
+          <a class="button primary" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.5.1/Zoggs-Sound-Audit_0.5.1_native_arm64.dmg"><span>DOWNLOAD FOR MAC</span><b>V0.5.1</b></a>
           <a class="button ghost" href="#archive">INSPECT THE ARCHIVE</a>
         </div>
         <div class="compat"><span>APPLE SILICON</span><span>LOCAL ONLY</span><span>NO CLOUD</span><span>ORIGINALS UNTOUCHED</span></div>
@@ -40,7 +40,7 @@
           <div class="orbit three"><i></i></div>
           <div class="crosshair" aria-hidden="true"><i></i><b></b></div>
           <img src="assets/zogg-icon.png" alt="Zogg's Sound Audit app icon" />
-          <span class="tag top">YOUR RECORDS <i>42,465</i></span>
+          <span class="tag top">YOUR RECORDS <i>60,117</i></span>
           <span class="tag right">AUDIT / ACTIVE</span>
           <span class="tag bottom">LOCAL EVIDENCE <i>READ ONLY</i></span>
           <div class="signal-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
@@ -53,7 +53,7 @@
       </div>
     </section>
 
-    <div class="rail"><span>01 / SEARCH</span><i></i><span>02 / AUDITION</span><i></i><span>03 / INSPECT</span><i></i><span>04 / DRAG OUT</span></div>
+    <div class="rail"><span>01 / SEARCH</span><i></i><span>02 / AUDITION</span><i></i><span>03 / AUDIT</span><i></i><span>04 / EXTRACT</span><i></i><span>05 / DRAG OUT</span></div>
 
     <section class="zogg-presence" id="zogg">
       <div class="zogg-portrait">
@@ -74,16 +74,38 @@
     </section>
 
     <section class="section" id="archive">
-      <div class="section-title"><span>01</span><div><p>THE LOCAL ARCHIVE</p><h2>EVERY SOUND.<br />READY TO MOVE.</h2></div><p>Filename, path, technical metadata, musical key and cached waveform evidence remain searchable without uploading a single byte.</p></div>
+      <div class="section-title"><span>01</span><div><p>THE LOCAL ARCHIVE</p><h2>EVERY SOUND.<br />READY TO MOVE.</h2></div><p>Filename, path, technical metadata, musical evidence and cached waveforms remain searchable without uploading a single byte.</p></div>
       <div class="feature-grid">
         <article><em>YOURS</em><h3>YOUR SOUND LIBRARY</h3><p>Register the folders you already use. The database indexes them in place; it does not swallow, rename or relocate the originals.</p></article>
         <article><em>16 MS</em><h3>NATIVE AUDITION</h3><p>Prewarmed CoreAudio playback means selecting a sound feels like an instrument, not a website.</p></article>
-        <article><em>DRAG</em><h3>DIRECT TO SOFTWARE</h3><p>Drag the filename, mini waveform or transport waveform to receive the original audio file.</p></article>
+        <article><em>DRAG</em><h3>DIRECT TO SOFTWARE</h3><p>Drag the ↗ filename to a DAW, Finder or PRS to receive the original file. Right-click to audition, favourite, analyze, group, send to crew or show it in Finder.</p></article>
+      </div>
+    </section>
+
+    <section class="section musical-audit" id="musical">
+      <div class="section-title"><span>02</span><div><p>ZOGG MUSICAL AUDIT</p><h2>HEAR THE STRUCTURE.<br />KEEP THE FEEL.</h2></div><p>Deterministic local evidence first. Pitch, tempo, groove and transcription confidence stay attached to the source fingerprint; weak evidence remains unknown instead of becoming fiction.</p></div>
+      <div class="audit-console" aria-label="Example Musical Audit readout">
+        <div class="audit-console-head"><span>ANALYSIS RUN / CURRENT</span><b><i></i> LOCAL CPU + OPTIONAL LOCAL MPS</b></div>
+        <div class="audit-metrics">
+          <div><span>PITCH</span><b>F3 · 175.89 HZ</b><small>CONFIDENCE 88%</small></div>
+          <div><span>TEMPO</span><b>126 BPM</b><small>ALTERNATIVE 63</small></div>
+          <div><span>GROOVE</span><b>24 HITS</b><small>SWING 57%</small></div>
+          <div><span>ARTIFACT</span><b>MIDI · CURRENT</b><small>SOURCE READ-ONLY</small></div>
+        </div>
+        <div class="audit-flow"><span>AUDIO</span><i></i><span>EVIDENCE</span><i></i><span>MIDI / GROOVE</span><i></i><span>DAW / CREW</span></div>
+      </div>
+      <div class="capability-grid">
+        <article><em>01 / PITCH</em><h3>MUSICAL EVIDENCE</h3><p>Inspect pitch, note, tuning, key, tempo, transients, loop likelihood and confidence. Every result is versioned and becomes stale when the source changes.</p></article>
+        <article><em>02 / MIDI</em><h3>EDITABLE TRANSCRIPTION</h3><p>Generate monophonic MIDI with original timing, velocity and pitch bend, or a clearly labelled harmonic interpretation. Optional local MuScriptor support adds true polyphonic extraction.</p></article>
+        <article><em>03 / RHYTHM</em><h3>GROOVE EXTRACTION</h3><p>Detect kick, snare, clap, hats, toms and percussion while preserving swing, ghost notes and microtiming. Export through General MIDI, Ableton, Logic or custom maps.</p></article>
+        <article><em>04 / CHECK</em><h3>AUDIO + MIDI PREVIEW</h3><p>Hear the original and extracted notes together, isolate rhythmic roles, compare original, cleaned and quantized timing, then drag the useful result into your DAW.</p></article>
+        <article><em>05 / CREW</em><h3>ROUTE THE EVIDENCE</h3><p>Send extracted grooves to KITKAT, pitched MIDI to Tomislav and external synths, or source evidence to PIX-7, WEB-6, ALi and Zogg's similar one-shot patrol.</p></article>
+        <article><em>06 / DURABLE</em><h3>60K-SOUND AUDIT</h3><p>One sound at a time, persistent pause and resume, crash recovery, current-result skipping and separate failure counts. The archive remains usable while analysis continues.</p></article>
       </div>
     </section>
 
     <section class="section signal" id="signal">
-      <div class="signal-copy"><span>02 / SIGNAL ANALYSIS</span><h2>SEE IT.<br /><b>HEAR IT.</b><br />TAKE IT.</h2><p>Every selected sound receives a detailed waveform, transport scrubber, technical dossier and deterministic local tonality reading with confidence—not invented metadata.</p></div>
+      <div class="signal-copy"><span>03 / SIGNAL ANALYSIS</span><h2>SEE IT.<br /><b>HEAR IT.</b><br />TAKE IT.</h2><p>Every selected sound receives a detailed waveform, transport scrubber, technical dossier and deterministic local pitch, tempo and rhythm evidence with disclosed confidence—not invented metadata.</p></div>
       <div class="wave-panel">
         <div class="wave-head"><span>IMP_24_08917.WAV</span><b>READY</b></div>
         <svg viewBox="0 0 900 220" role="img" aria-label="Stylized audio waveform">
@@ -96,30 +118,34 @@
     </section>
 
     <section class="section app-showcase" id="app-view">
-      <div class="section-title compact"><span>03</span><div><p>WORKING APPLICATION</p><h2>ONE ARCHIVE.<br />TWO PERSPECTIVES.</h2></div><p>The current native macOS app running against a real 42,465-file production library. Public installations begin empty, then become the user's own searchable and explorable sound universe.</p></div>
+      <div class="section-title compact"><span>04</span><div><p>WORKING APPLICATION</p><h2>ONE ARCHIVE.<br />THE WHOLE CREW.</h2></div><p>The current native macOS app running against a real 60,117-file production library. Public installations begin empty, then become the user's own searchable, analyzable and playable sound universe.</p></div>
       <div class="app-views">
         <figure class="app-frame ledger-view">
           <div class="frame-head"><span>01 / AUDIT LEDGER</span><b>SEARCH · PREVIEW · DRAG</b></div>
           <img src="assets/zoggs-sound-audit-ledger.png" alt="Zogg's Sound Audit Ledger displaying a real local library with waveform previews and evidence details" loading="lazy" />
-          <figcaption><strong>THE LEDGER</strong><span>Find the exact sound, audition it, inspect its evidence, then drag the untouched original into your project.</span></figcaption>
+          <figcaption><strong>THE LEDGER</strong><span>Click to autoplay, use smart thematic sorting, inspect musical and rhythmic evidence, right-click for crew actions or Show in Finder, then drag the untouched original into your project.</span></figcaption>
         </figure>
         <figure class="app-frame atlas-view">
           <div class="frame-head"><span>02 / SONIC ATLAS</span><b>ORBIT · PATROL · AUDITION</b></div>
-          <img src="assets/zoggs-sound-audit-atlas.png" alt="Zogg's Sound Audit three-dimensional Sonic Atlas showing a real 42,465-file sound library as a galaxy" loading="lazy" />
+          <img src="assets/zoggs-sound-audit-atlas.png" alt="Zogg's Sound Audit three-dimensional Sonic Atlas showing a real 60,117-file sound library as a galaxy" loading="lazy" />
           <figcaption><strong>THE SONIC ATLAS</strong><span>Explore the full archive as a 3D sound galaxy—or discover Zogg's hidden Sound Patrol and let the vehicle navigate, target and audition it for you.</span></figcaption>
         </figure>
+      </div>
+      <div class="crew-grid" aria-label="Zogg creative crew">
+        <span><b>ZOGG</b> SIMILAR ONE-SHOTS</span><span><b>KITKAT</b> EXTRACTED GROOVES</span><span><b>PIX-7</b> SAMPLE SEQUENCER</span><span><b>TOMISLAV</b> MIDI + EXTERNAL SYNTHS</span><span><b>WEB-6</b> TRANSIENT STRANDS</span><span><b>ALi</b> LOOP PERFORMANCE</span>
       </div>
     </section>
 
     <section class="download">
       <div class="download-glow"></div>
       <img src="assets/zogg-icon.png" alt="" />
-      <span>ZOGG'S SOUND AUDIT / V0.4.4</span>
+      <span>ZOGG'S SOUND AUDIT / V0.5.1</span>
       <h2>KEEP THE<br />EVIDENCE.</h2>
       <p>Native. Local. Fast. Slightly suspicious of folders.</p>
-      <a class="button primary large" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.4.4/Zoggs-Sound-Audit_0.4.4_aarch64.dmg"><span>DOWNLOAD FOR MAC</span><b>↓</b></a>
-      <a class="checksum" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.4.4/Zoggs-Sound-Audit_0.4.4_aarch64.dmg.sha256">SHA-256 CHECKSUM</a>
-      <small>MACOS 15+ / APPLE SILICON</small>
+      <a class="button primary large" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.5.1/Zoggs-Sound-Audit_0.5.1_native_arm64.dmg"><span>DOWNLOAD FOR MAC</span><b>↓</b></a>
+      <a class="checksum" href="https://github.com/tomislavrupic/zoggs-sound-audit-mac/releases/download/v0.5.1/Zoggs-Sound-Audit_0.5.1_native_arm64.dmg.sha256">SHA-256 CHECKSUM</a>
+      <small>MACOS 14+ / APPLE SILICON / LOCAL INDEPENDENT BUILD</small>
+      <p class="release-note">Ad-hoc signed and independently distributed. Not Developer ID notarized.</p>
     </section>
   </main>
   <footer><div class="brand"><img src="assets/zogg-icon.png" alt="" /><span><b>ZOGG'S</b><small>SOUND AUDIT</small></span></div><p>PIXEL RECORDS / PIX-7 DESIGN SYSTEM</p><p>LOCAL BUILD / NO TELEMETRY</p></footer>
